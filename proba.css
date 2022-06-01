@@ -1,0 +1,865 @@
+body{
+    background-color: #0E0E0E;
+}
+main{
+    display: grid;
+    grid-template-columns: 414px 414px 310px;
+    grid-template-rows: 261px 450px 293px 287px 80px 297px;
+    grid-template-areas: " header header header"
+                         " basket basket itogo"
+                         " gift gift . "
+                         " data pay ."
+                         " line line line"
+                         "footer footer footer";
+    gap: 20px;
+    margin-top: 100px;
+    margin-left: 100px;
+}
+/* хеддер-футтерначало !!! */
+header{
+    width: 1920px;
+    height: auto;
+    grid-area: header;
+}
+.hed1{
+    display: grid;
+    grid-template-columns: 399px 610px 165px;
+    grid-template-areas: "sity logo panel";
+    width: 1920px;
+    height: 160px;
+    margin: 0px;
+    /* padding-left: 130px; */
+}
+.sity{
+    grid-area: sity;
+}
+#sex{
+    width: 200px;
+    height: 21px;
+    background-color: #0E0E0E;
+    color:#DCDCDC;
+    margin-top: 101px;
+    font-size: 18px;
+    border: 0px solid #0E0E0E;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    grid-area: logo;
+    width: 399px;
+    position: center;
+}
+.textlogo{
+    margin-top: 29px;
+    margin-left: 14px;
+}
+.panel{
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    grid-area: panel;
+    margin-top: 40px;
+}
+.hed2{
+    display: grid;
+    grid-template-columns: 181px 202px 184px 81px 102px 180px;
+    grid-template-areas: "katalog rabota lombard otsiv kontact pole";
+    align-items: center;
+    column-gap: 46px;
+    width: 1180px;
+    height: 41px;
+    margin: 0px;
+    /* padding-left: 130px; */
+    margin-top: 40px;
+}
+#text2{
+    width: 180px;
+    height: 41px;
+    border: 2px solid #6E6E6E;
+    border-radius: 20px;
+    background-color: #0E0E0E;
+}
+p{
+    color: #DCDCDC;
+    margin: 0px;
+}
+.katalog{
+    grid-area: katalog;
+}
+.rabota{
+    grid-area: rabota;
+}
+.lombard{
+    grid-area: lombard;
+}
+.otsiv{
+    grid-area: otsiv;
+}
+.kontact{
+    grid-area: kontact;
+}
+.pole{
+    grid-area: pole;
+    margin-left: 20px;
+}
+footer{
+    /* margin-top: 150px; */
+    grid-area: footer;
+}
+.linee{
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    width: 1200px;
+    height: 80px;
+    gap: 50px;
+    background-color: #1B1B1B;
+    grid-area: line;
+}
+.end{
+    display: grid;
+    grid-template-columns: 400px 1fr;
+    grid-template-areas: "logoo endd";
+    margin-top: 45px;
+}
+.logoo{
+    display: flex;
+}
+.endd{
+    display: grid;
+    grid-template-columns: 220px 220px 220px;
+    grid-template-rows: 23px 23px 23px;
+    grid-template-areas: "oplata otsivi site"
+                         "dostavka kontacts answer"
+                         "vosvrat info sobitia";
+    row-gap: 10px;
+    margin-top: 5px;
+}
+.oplata{
+    grid-area: oplata;
+}
+.dostavka{
+    grid-area: dostavka;
+}
+.vosvrat{
+    grid-area: vosvrat;
+}
+.otsivi{
+    grid-area: otsivi;
+}
+.kontacts{
+    grid-area: kontacts;
+}
+.info{
+    grid-area: info;
+}
+.site{
+    grid-area: site;
+}
+.answer{
+    grid-area: answer;
+}
+.sobitia{
+    grid-area: sobitia;
+}
+.logognp{
+    width: 105px;
+    height: 105px;
+    /* margin-left: 130px; */
+}
+.textlogognp{
+    width: 165px;
+    height: 40px;
+    margin-left: 10px;
+    margin-top: 40px;
+}
+/* хеддер-футтерконец !!! */
+/* МОЯ КОРЗИНА НАЧАЛО!!! */
+.basket{
+    width: 848px;
+    height: 450px;
+    background-color: #212121;
+    border-radius: 8px;
+    /* margin-top: 40px;
+    margin-left: 130px; */
+    grid-area: basket;
+}
+p{
+    color:#DCDCDC;
+    margin: 0px;
+}
+.up{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "basket klick";
+    width: 848;
+    height: 34;
+    margin: 0px;
+    margin-bottom: 14px;
+    margin-top: 13px;
+}
+.mybasket{
+    width: 168px;
+    height: 34px; 
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400px;
+    font-size: 28px;
+    line-height: 34px;
+    color: #DCDCDC;
+    margin: 0px;
+    margin-left: 30px;
+    margin-top: 12px;
+    grid-area: basket;
+}
+.oneklick{
+    width: 160px;
+    height: 34px;
+    background-color: #212121;
+    border: 1px solid #F6C566;
+    border-radius: 8px;
+    margin-left: auto;
+    margin-right: 25px;
+    margin-top: 13px;
+    grid-area: klick;
+}
+#oneklick:hover{
+    width: 160px;
+    height: 34px;
+    color: #212121;
+    background-color: #F6C566;
+    border: 1px solid #F6C566;
+    border-radius: 8px;
+    margin-left: auto;
+    margin-right: 25px;
+    margin-top: 13px;
+    grid-area: klick;
+}
+#oneklick:hover > p{
+    color: #212121;
+}
+.orderrrrr{
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 18px;  
+    letter-spacing: 0.07em;  
+    color: #DCDCDC;  
+    margin: 0px;  
+}
+hr{
+    width: 793px;
+    height: 0px;
+    border: 1px solid #353534;
+    margin: 0px;
+    margin-left: 30px;
+    margin-bottom: 10px;
+}
+.first{
+    display: grid;
+    grid-template-columns: 200px 82px 60px 177px 1fr;
+    grid-template-rows: 20px 24px 21px 36px 38px 14px;
+    grid-template-areas: "p . . . ."
+                         "p q w . ."
+                         "p . . . ."
+                         "p e e e ."
+                         "p . . . ."
+                         "p r t . ."           ;
+    width: 848px;
+    height: 180px;
+    margin: 0px;
+}
+.q{
+    grid-area: q;
+    font-size: 20px;
+}
+.w{
+    grid-area: w;
+    font-size: 15px;
+    color: #C0C0C0;
+    text-decoration: line-through;
+    align-self: end;
+    
+}
+.e{
+    grid-area: e;
+    font-size: 15px;
+}
+.r{
+    grid-area: r;
+    font-size: 12px;
+}
+.t{
+    grid-area: t;
+    font-size: 12px;
+}
+.img1{
+    grid-area: p;
+    margin: 0px;
+    margin-left: 26px;
+    margin-top: 15px;
+}
+.second{
+    display: grid;
+    grid-template-columns: 200px 82px 60px 177px 1fr;
+    grid-template-rows: 20px 24px 21px 36px 38px 14px;
+    grid-template-areas: "o . . . ." 
+                         "o a s . ."
+                         "o . . . ."
+                         "o d d d ."
+                         "o . . . ."
+                         "o m g . .";
+    width: 848px;
+    height: 180px;
+    margin: 0px;
+}
+.a{
+    grid-area: a;
+    font-size: 20px;
+}
+.s{
+    grid-area: s;
+    color: #C0C0C0;
+    font-size: 15px;
+    text-decoration: line-through;
+    align-self: end;
+}
+.d{
+    grid-area: d;
+    font-size: 15px;
+}
+.m{
+    grid-area: m;
+    font-size: 12px;
+}
+.g{
+    grid-area: g;
+    font-size: 12px;
+}
+.img2{
+    grid-area: o;
+    margin: 0px;
+    margin-left: 24px;
+    margin-top: 14px;
+}
+.hr{
+    margin-bottom: 5px;
+}
+/* МОЯ КОРЗИНА КОНЕЦ!!! */
+/* ИТОГО НАЧАЛО !!! */
+.itog{
+    background-color: #212121;
+    width: 310px;
+    height: 450px;
+    border: 0px #212121;
+    border-radius: 8px;
+    grid-area: itogo;
+}
+.beta{
+    /* position: relative; */
+    width: 250px;
+    height: 60px;
+    display: grid;
+    grid-template-columns: 125px 1fr;
+    grid-template-rows: 60px;
+    grid-template-areas: "i o";
+    margin: 0px;
+    margin-left: 30px;
+}
+.pervai{
+    /* position: relative; */
+    padding: 0px;
+    padding-top: 12px;
+    width: 125px;
+    height: 60px;
+}
+.vtorai{
+    /* position: relative; */
+    padding: 0px;
+    padding-top: 14px;
+    width: 125px;
+    height: 60px;
+}
+.i{
+    /* position: absolute; */
+    text-align: left;
+    width: 125px;
+    margin: 0px;
+}
+.o{
+    /* position: absolute; */
+    text-align: right;
+    font-size: 25px;
+    width: 125px;
+    margin: 0px;
+}
+p{
+    color: #DCDCDC;
+    margin: 0px;
+}
+.itogo2{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    width: 250px;
+    height: 90px;
+    padding-left: 30px;
+}
+.line{
+    width: 250px;
+    height: 0px;
+    margin-left: 30px;
+    background-color: #353534;
+    border: 1px solid #353534;
+}
+.bonus{
+    width: 149px;
+    height: 14px; 
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    margin: 0px;
+    margin-left: 131px;
+    color: #A0A09E;
+    text-align: right;
+}
+.promo{
+    display: grid;
+    grid-template-columns: 242px 62px;
+    width: 310px;
+    height: 34px;
+    margin: 0px;
+    margin-top: 74px;
+}
+.vector{
+    width: 34px;
+    height: 34px;
+    margin: 0px;
+    margin-left: 10px;
+    background-color: #212121;
+    border: 1px solid #6A6967;
+    border-radius: 8px;
+    
+}
+.promokod{
+    height: 30px;
+    width: 206px;
+    background-color: #212121;
+    margin: 0px;
+    margin-left: 30px;
+}
+#promokod{
+    height: 30px;
+    width: 206px;
+    background-color: #212121;
+    border: 1px solid #6A6967;
+    border-radius: 8px;
+    color: #6A6967;
+    margin: 0px;
+    text-align: center;
+}
+.xyi{
+    width: 250px;
+    height: 46px;
+    background-color: #F6C566;
+    border: 1px solid ;
+    border-radius: 8px;
+    margin: 0px;
+    margin-left: 30px;
+    margin-top: 25px;
+}
+.xyihe{
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 18px;  
+    letter-spacing: 0.07em;  
+    color: #212121;    
+}
+.after{
+    width: 250px;
+    height: 30px;
+    margin: 0px;
+    padding-left: 10%;
+    font-size: 12px;
+    font-family: 'Lato';
+    font-weight: 400;
+    line-height: 15px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #A0A09E;
+    white-space: nowrap;
+    margin-bottom: 30px;
+    margin-top: 25px;
+}
+.kkk{
+    text-align: right;
+}
+/* ИТОГО КОНЕЦ!!! */
+/* СПОСОБ ДОСТАВКИ НАЧАЛО!!! */
+.DeliveryMethod{
+    width: 848px;
+    height: 293px;
+    background-color: #212121;
+    /* margin-top: 20px;
+    margin-left: 130px; */
+    border: 1px solid #000000;
+    border-radius: 8px;
+    grid-area: gift;
+}
+.upp{
+    position: relative;
+    width: 848px;
+    height: 59px;
+}
+h1{
+    position: absolute;
+    width: 242px;
+    height: 34px;
+    font-size: 28px;
+    margin: 0px;
+    margin-left: 30px;
+    margin-top: 25px;
+    color: #DCDCDC;
+}
+.sposob{
+    display: grid;
+    grid-template-areas: "mail door ."
+                         "sdek punkt ."
+                         "samo . .";
+    grid-template-columns: 195.5px 195.5px 1fr;
+    grid-template-rows: 17px 17px 17px 1fr;
+    row-gap: 15px;
+    width: 848px;
+    height: 85px;
+    margin: 0px;
+    margin-left: 55px;
+    margin-top: 35px;
+}
+.mail{
+    grid-area: mail;
+}
+.sdek{
+    grid-area: sdek;
+}
+.samo{
+    grid-area: samo;
+}
+.door{
+    grid-area: door;
+}
+.punkt{
+    grid-area: punkt;
+}
+.f{
+    color: #DCDCDC;
+    font-size: 15px;
+    margin: 0px;
+}
+input[type=checkbox]{
+    width: 16px;
+    height: 16px;
+}
+.card{
+    display: grid;
+    grid-template-columns: 126px 1fr;
+    width: 790;
+    height: 34px;
+    margin: 0px;
+    margin-top: 22px;
+    margin-left: 55px;
+}
+.text{
+    width: 266px;
+    height: 34px;
+    margin: 0px;
+}
+.orderrrr{
+    width: 126px;
+    height: 34px;
+    background-color: #F6C566;
+    border: 1px solid ;
+    border-radius: 8px;
+    margin: 0px;
+}
+.orderrr{
+    font-size: 12px;
+    line-height: 14.4px;  
+    letter-spacing: 0.07em;  
+    color: #212121;    
+    margin: 0px;
+}
+.label{
+    height: 32px;
+    width: 266px;
+    border-radius: 8px;
+    margin: 0px;
+    margin-left: 20px;
+    background-color: #212121;
+}
+input{
+    height: 31px;
+    width: 266px;
+    border: 1px solid #DCDCDC;
+    border-radius: 8px;
+    background-color: #212121;
+    color: #DCDCDC;
+    font-size: 12px;
+}
+.delivery{
+    width: 121px;
+    height: 14px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;   
+    color: #6A6967;
+    margin: 0px;
+    margin-left: 57px;
+    margin-top: 15px;
+}
+/* СПОСОБ ДОСТАВКИ КОНЕЦ!!! */
+/* СПОСОБ ОПЛАТЫ НАЧАЛО!!! */
+.pay{
+    position: relative;
+    background-color: #212121;
+    width: 414px;
+    height: 287px;
+    border: 0px #212121;
+    border-radius: 8px;
+    grid-area: pay;
+}
+.zagolovok{
+    /* position: absolute; */
+    width: 201px;
+    height: 34px;
+    top: 25px;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 34px;
+    color:#DCDCDC;
+    margin: 0px;
+    margin-left: 62px;
+    margin-bottom: 25px;
+}
+.kartocki{
+    display: grid;
+    grid-template-columns: 120px 120px;
+    column-gap: 30px;
+    row-gap: 20px;
+    width: 290px;
+    height: 160px;
+    margin: 84px 62px 43px 62px;
+}
+.kartocka0, .kartocka1, .kartocka2, .kartocka3{
+    height: 70px;
+    width: 130px;
+    left: 62px;
+    top: 84px;
+    border-radius: 8px;
+    border:solid #DCDCDC 1px;
+    margin: 0px;
+    cursor: pointer;
+    z-index: 4;
+}
+.p{
+    margin: 41px 23px 15px 23px;
+    font-family: "Lato";
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #DCDCDC;
+}
+.pp{
+    margin: 18px 24px 18px 25px;
+    font-family: 'Lato';
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #DCDCDC;
+    text-align: center;
+}
+.ppp{
+    margin: 26px 22px 30px 22px;
+    font-family: 'Lato';
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #DCDCDC;
+    text-align: center;
+}
+.cardpng{
+    position:absolute;
+    top: 39%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    z-index: 5;
+}
+.sbp{
+    position:absolute;
+    top: 41%;
+    left: 67%;
+    transform: translate(-50%, -50%);
+    z-index: 5;
+}
+#kartocka:hover > p{
+    color: #F6C566;
+}
+#kartocka:hover{
+    /* position: relative; */
+    height: 70px;
+    width: 130px;
+    left: 62px;
+    top: 84px;
+    border-radius: 8px;
+    border:solid #F6C566 1px;
+    margin: 0px;
+}
+/* СПОСОБО ОПЛАТЫ КОНЕЦ !!! */
+/* ВАШИ ДАННЫЕ НАЧАЛО!!! */
+.infoblock {
+    width: 310px;
+    height: 221px;
+    background: #212121;
+    border: 1 solid #212121;
+    border-radius: 8px;
+    padding: 25px 52px 41px 52px;
+    grid-area: data;
+}
+.vasheinfo {
+    width: 310px;
+    display: grid;
+    grid-template-columns: 178px 60px;
+    grid-template-areas: "h j";
+    margin-bottom: 25px;
+}
+.infovashe {
+    margin: 0;
+    width: 190px;
+    height: 34px;
+    font-weight: 500;
+    font-size: 28px;
+    align-self: start;
+    font-family: Lato;    
+    color: #DCDCDC;
+    grid-area: h;
+}
+#vxod{
+    width: 60px;
+    height: 24px;
+    align-self: end;
+    margin-left: 72px;
+    justify-self: start;
+    border: 1px solid #F7C566;
+    background-color: #212121;
+    box-sizing: border-box;
+    border-radius: 16px;
+    cursor: pointer;
+    color: #DCDCDC;
+    font-family: 'Lato';
+    font-weight: 300;
+    font-size: 12px;
+    grid-area: j;
+}
+#vxod:hover{
+    color: #212121;
+    background-color: #F7C566;
+    border: 1px solid #F7C566;
+}
+.input {
+    color: #DCDCDC;
+    outline: none;
+    font-family: 'Lato';
+    font-weight: 300;
+    font-size: 12px;
+}
+.input:hover {
+    border-color: #DCDCDC;
+}
+.input:focus {
+    border-color: #DCDCDC;
+}
+.body{
+    width: 310px;
+    height: 162px;
+    display: grid;
+    grid-template-columns: 155px 155px;
+    grid-template-areas: "name secondname"
+                         "phonenumber phonenumber"
+                         "email email";
+}
+.name1 {
+    grid-area: name;
+    width: 145px;
+    height: 34px;
+    border: 1px solid #6A6967;
+    box-sizing: border-box;
+    border-radius: 8px;
+    background-color: #212121;
+    padding: 9px 11px 11px 10px;
+    margin-bottom: 30px;
+}
+.secondname1 {
+    grid-area: secondname;
+    width: 145px;
+    height: 34px;
+    border: 1px solid #6A6967;
+    box-sizing: border-box;
+    border-radius: 8px;
+    background-color: #212121;
+    padding: 9px 11px 11px 10px;
+    margin-bottom: 30px;
+    margin-left: 10px;
+}
+.phonenumber1 {
+    grid-area: phonenumber;
+    width: 310px;
+    height: 34px;
+    border: 1px solid #6A6967;
+    box-sizing: border-box;
+    border-radius: 8px;
+    background-color: #212121;
+    padding: 9px 140px 11px 10px;
+    margin-bottom: 30px;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.email1 {
+    grid-area: email;
+    width: 310px;
+    height: 34px;
+    border: 1px solid #6A6967;
+    box-sizing: border-box;
+    border-radius: 8px;
+    background-color: #212121;
+    padding: 9px 140px 11px 10px;
+}
+.name {
+    grid-area: name;
+}
+.secondname {
+    grid-area: secondname;
+}
+.phonenumber {
+    grid-area: phonenumber;
+}
+.email {
+    grid-area: email;
+}
+/* ВАШИ ДАННЫЕ КОНЕЦ!!! */
